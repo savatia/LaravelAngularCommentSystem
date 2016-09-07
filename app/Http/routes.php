@@ -12,8 +12,7 @@
 */
 
 Route::get('/', function () {
-    //return view('welcome');
-    View::make('welcome');
+    return view('index', []);
 });
 
 Route::group(array('prefix' => 'api'), function(){

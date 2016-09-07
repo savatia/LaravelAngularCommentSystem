@@ -14,9 +14,8 @@ class CommentController extends Controller
     //
     public function index()
     {
-
         //return Response::json(Comment::get());
-        return response()->json([Comment::get()]);
+        return response()->json(Comment::get());
     }
 
     public function store()
